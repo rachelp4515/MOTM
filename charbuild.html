@@ -4,10 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="charstyles.css">
+    <title>MotM</title>
 </head>
 <body>
-    <h1> character building stuff </h1>
-    
+    <h1> character sheet </h1>
+
+<form id="char-sheet" action="">
+    <div id="basic-info">
+        <h4>Basic Info</h4>
+                <label for="name">Name of your Character </label>
+                <input type="text">
+        <br>
+                <label for="age"> Age </label>
+                <input type="number">
+        <br>
+                <label for="weight"> Weight </label>
+                <input type="text">
+        <br>
+                <label for="appreance"> A short description of your appreance </label>
+                <br>
+
+                <textarea name="appreance" id="" cols="30" rows="10"></textarea>
+        <br>
+    </div>
+    <div id="rolls">
+        <h4>Rolls</h4>
+
+        <label for="affinity">Affinity</label>
+        <input type="number" class="mod-input">
+        <p class="mod-output"></p>
+
+        <label for="power">Power</label>
+        <input type="number" class="mod-input">
+        <p class="mod-output"></p>
+
+        <label for="will">Will</label>
+        <input type="number" class="mod-input">
+        <p class="mod-output"></p>
+
+        <label for="cunning">Cunning</label>
+        <input type="number" class="mod-input">
+        <p class="mod-output"></p>
+
+        <label for="charisma">Charisma</label>
+        <input type="number" class="mod-input">
+        <p class="mod-output"></p>
+
+        <label for="resistance">Resistance</label>
+        <input type="number" class="mod-input">
+        <p class="mod-output"></p>
+    </div>
+
+    <div id="hit-points">
+        <h4>Hit Points</h4>
+        <label for="Head">Head</label>
+        <input type="text">
+        <br>
+
+        <label for="Body">Body</label>
+        <input type="text">
+        <br>
+
+        <label for="Internals">Internals</label>
+        <input type="text">
+        <br>
+
+        <label for="Limbs">Limbs</label>
+        <input type="text">
+        <br>
+
+        <label for="Tail">Tail</label>
+        <input type="text">
+        <br>
+
+    </div>
+
+    <div class="RCO">
+        <h3>Races, Origins, and Class</h3>
+        <div class="race">
+            <h4>Race</h4>
+            <label for="race">Race</label>
+            <input type="text">
+            <br>
+
+            <label for="Skills">Skills</label>
+            <input type="text">
+            <br>
+
+            <label for="senses">Senses</label>
+            <input type="text">
+            <br>
+
+            <label for="languages">Languages</label>
+            <input type="text">
+            <br>
+
+            <label for="movement">Movement Types</label>
+            <input type="text">
+            <br>
+
+        </div>
+        <div class="class">
+            <h4>Class</h4>
+            <label for="class">Class</label>
+            <input type="text">
+            <br>
+
+            <label for="subclass">Subclass</label>
+            <input type="text">
+            <br>
+
+            <label for="abilities">Abilities</label>
+            <input type="text">
+            <br>
+
+            <label for="hit-dice">Hit dice</label>
+            <input type="text">
+            <br>
+
+            <label for="equipped">Equipped</label>
+            <input type="text">
+            <br>
+
+            <label for="gc-start">Starting GC</label>
+            <input type="number">
+            <br>
+
+        </div>
+    </div>
+    </form>
 </body>
 </html>
