@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/tools/tools.css">
+    <script src="/tools/tools.js" defer></script>
+    <script src="https://kit.fontawesome.com/d70a4d3a14.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1> tools n stuff </h1>
+
+    <div class="tool-group">
+        <div class="tool">
+            <h2>Notes</h2>
+            <textarea id='notes' name="notes" cols="70" rows="40"></textarea>
+        </div>
+
+        <div class="tool" id="dice">
+            <h2>Dice</h2>
+
+            <table 
+                <tr>
+                    <th>Die</th>
+                    <th>#</th>
+                    <th>Modifier</th>
+                    <th></th>
+                    <th>Results</th>
+                </tr>
+                <tr>
+                   <td>d4</td>
+                   <td><input  id='d4a'type="number" value="1"></td>
+                   <td><input id="d4mod" type="number" placeholder="0"></td>
+                   <td><button id="d4btn">ROLL</button></td>
+                   <td id="d4res"></td>
+                </tr>
+                <tr>
+                   <td>d6</td>
+                   <td><input id="d6a" type="number" value="1"></td>
+                   <td><input id="d6mod" type="number" placeholder="0"></td>
+                   <td><button id="d6btn">ROLL</button></td>
+                   <td id="d6res"></td>
+                </tr>
+                <tr>
+                   <td>d8</td>
+                   <td><input id="d8a" type="number" value="1"></td>
+                   <td><input id="d8mod" type="number" placeholder="0"></td>
+                   <td><button id="d8btn">ROLL</button></td>
+                   <td id="d8res"></td>
+                </tr>
+                <tr>
+                   <td>d10</td>
+                   <td><input id="d10a" type="number" value="1"></td>
+                   <td><input id="d10mod" type="number" placeholder="0"></td>
+                   <td><button id="d10btn">ROLL</button></td>
+                   <td id="d10res"></td>
+                </tr>
+                <tr>
+                   <td>d12</td>
+                   <td><input id="d12a" type="number" value="1"></td>
+                   <td><input id="d12mod" type="number" placeholder="0"></td>
+                   <td><button id="d12btn">ROLL</button></td>
+                   <td id="d12res"></td>
+                </tr>
+                <tr>
+                   <td>d20</td>
+                   <td><input id="d20a" type="number" value="1"></td>
+                   <td><input id="d20mod" type="number" placeholder="0"></td>
+                   <td><button id="d20btn">ROLL</button></td>
+                   <td id="d20res"></td>
+                </tr>
+                <tr>
+                   <td>d100</td>
+                   <td><input id="d100a" type="number" value="1"></td>
+                   <td><input id="d100mod" type="number" placeholder="0"></td>
+                   <td><button id="d100btn">ROLL</button></td>
+                   <td id="d100res"></td>
+                </tr>
+                
+
+
+            </table>
+        </div>
+    </div>
+</body>
+</html>

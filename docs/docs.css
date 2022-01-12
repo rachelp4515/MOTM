@@ -1,0 +1,78 @@
+body{
+    /* display: flex;
+    flex-wrap:wrap; */
+    margin-left: 5%;
+    background-image: url("/MASTERS.png");
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+}
+h1{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size:xx-large;
+}
+
+/* DROPDOWN = WHOLE DIV
+DROP = BUTTON */
+menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.dropdown {
+    background-color: rgba(144, 136, 160, 0.438);
+    position: relative;
+    display: inline-block;
+    height: 15em;
+    width:15em;
+    margin: 5em;
+    border: rgba(108, 143, 119, 0.527) 2px solid;
+    border-top: none;
+    border-radius: 0 17px;
+}
+
+
+.drop{
+    background-color: #5b2bb4;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    width: 15em;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 17px;
+    cursor: pointer;
+}
+
+
+
+.options {
+    display: none;
+    border-radius: 15px 0 15px ;
+    position: absolute;
+    float: right;
+    width:15em;
+    background-color: rgba(166, 233, 192, 0.726);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.options a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.options a:hover {background-color: #8be49e5d;}
+
+.dropdown:hover .options {display: block;}
+
+.dropdown:hover .drop {background-color: #3331ad;}
+
+p.desc{
+    margin: 8px;
+}

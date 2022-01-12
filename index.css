@@ -37,21 +37,18 @@ button{
     padding: 10px;
     margin: 15px;
     background-color: green;
-    border: black 2px solid;
-    border: 0 solid;
+    border: 1px black solid;
+    border-radius: 0 15px;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
     outline: 1px solid;
     outline-color: rgba(4, 58, 36, 0.5);
     outline-offset: 0px;
     text-shadow: none;
-    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
     width: 10em;
 }
 button:hover {
-    border: 2px solid;
     box-shadow: inset 0 0 20px rgba(153, 241, 222, 0.5), 0 0 20px rgba(150, 233, 226, 0.596);
-    outline-color: rgba(35, 80, 48, 0.473);
-    outline-offset: 15px;
     text-shadow: 1px 1px 2px #61aca2; 
 }
 a{
@@ -59,6 +56,3 @@ a{
     color: black;
 }
 
-/* buttons{
-    float:right;
-} */

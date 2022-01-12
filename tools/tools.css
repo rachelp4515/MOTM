@@ -1,0 +1,42 @@
+body{
+    margin: 0 5%;
+    color: black;
+    background-image: url("/MASTERS.png");
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+}
+h1, h4{
+    font-family: 'Cinzel Decorative', cursive;
+}
+.tool-group{
+    display: flex;
+}
+.tool{
+    margin: 0 3em;
+}
+td#results, input{
+    width: 2em;
+    margin: 0.5em 2em;
+}
+
+.tool-group td{
+    border:black 1px solid
+}
+table tr:nth-child(even){
+    background-color: rgba(181, 238, 181, 0.342);
+}
+table tr:nth-child(odd){
+    background-color: rgba(115, 84, 146, 0.425);
+}
+table{
+    border-collapse: collapse;
+}
+textarea{
+    background-color: rgb(253, 252, 243);
+}
