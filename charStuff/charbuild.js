@@ -84,45 +84,26 @@ function create(e, chars) {
                 Body: body.value,
                 Internals: internals.value,
                 Limbs: limbs.value,
-                // [
-                //     {
-                //         limb: "arm (L)",
-                //         hp: 1d4
-                //     }
-                // ]
                 Tail: tail.value,
             },
             me:{
                 boon: miasmicBoon.value,
                 penalties: miasmicPenalties.value,
             },
-            // [
-            //     "miasmic boon:buring up"
-            //     "miasmic penalty:weak lungs",
-            // ]
-
-
             race: {
                 type:race.value,
                 skills: raceSkills.value,
-                // [Charisma increases by 10, Affinity increases by 5, Power decreases by 10]
                 senses: senses.value,
-                // [heightend smell]
                 languages: langs.value,
-                // [akeen, gutter]
                 movementType: move.value,
                 composure: composure.value, 
             },
-
-
-
             charClass: {
                 type: charClass.value,
                 abilities: abilities.value,
                 // [Wayfinder, Cool Headed, Endurance]
                 subclass:subclass.value,
             },
-
             origin: {
                 type: origin.value,
                 Affinity: originAffinity.value,
