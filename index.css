@@ -2,7 +2,7 @@ body{
     display: flex;
     flex-wrap:wrap;
     margin-left: 8%;
-    background-image: url("MASTERS.png");
+    background-image: url("../MASTERS.png");
     background-attachment: fixed;
     background-size:cover;
     background-repeat: no-repeat;
@@ -36,7 +36,7 @@ button{
     font-size:large;
     padding: 10px;
     margin: 15px;
-    background-color: green;
+    background-color: rgba(41, 223, 41, 0.541);
     border: 1px black solid;
     border-radius: 0 15px;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
