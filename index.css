@@ -2,7 +2,7 @@ body{
     display: flex;
     flex-wrap:wrap;
     margin-left: 8%;
-    background-image: url("../MASTERS.png");
+    background-image: url("MASTERS.png");
     background-attachment: fixed;
     background-size:cover;
     background-repeat: no-repeat;
