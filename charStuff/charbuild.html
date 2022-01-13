@@ -5,135 +5,170 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d70a4d3a14.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/charStuff/charstyles.css">
-    <script src='charStuff/charbuild.js' defer></script>
+    <script src='/utils.js' defer></script>
+    <script src='/charStuff/charbuild.js' defer></script>
     <title>MotM</title>
-</head>
+</head> 
 <body>
-    <h1> character sheet </h1>
+    <nav>
+        <ul>
+            <li id='motm'><a href="/index.html"> MotM </a></li>
+            <li><a href="/tools/tools.html"> Tools </a></li>
+            <li><a href="/charStuff/charSheets.html"> Character Sheets </a></li>
+            <li><a href="/docs/docs.html"> Documents </a></li>
+        </ul>
+    </nav>
 
 <form id="char-sheet" action="">
     <div id="basic-info">
         <h4>Basic Info</h4>
                 <label for="name">Name of your Character </label>
-                <input type="text">
+                <input id="name"type="text">
         <br>
                 <label for="age"> Age </label>
-                <input type="number">
+                <input id="age" type="number">
         <br>
                 <label for="weight"> Weight </label>
-                <input type="text">
+                <input id="weight" type="text">
         <br>
-                <label for="appreance"> A short description of your appreance </label>
+                <label for="height">Height</label>
+                <input id="height" type="text">
+        <br>
+                <label for="appearance"> A short description of your appreance </label>
                 <br>
 
-                <textarea name="appreance" id="" cols="30" rows="10"></textarea>
+                <textarea id="appArea" cols="30" rows="10"></textarea>
         <br>
     </div>
     <div id="rolls">
         <h4>Rolls</h4>
 
         <label for="affinity">Affinity</label>
-        <input type="number" class="mod-input">
+        <input id="affinity" type="number" class="mod-input">
         <p class="mod-output"></p>
 
         <label for="power">Power</label>
-        <input type="number" class="mod-input">
+        <input id="power" type="number" class="mod-input">
         <p class="mod-output"></p>
 
         <label for="will">Will</label>
-        <input type="number" class="mod-input">
+        <input id="will" type="number" class="mod-input">
         <p class="mod-output"></p>
 
         <label for="cunning">Cunning</label>
-        <input type="number" class="mod-input">
+        <input id="cunning" type="number" class="mod-input">
         <p class="mod-output"></p>
 
         <label for="charisma">Charisma</label>
-        <input type="number" class="mod-input">
+        <input id="charisma" type="number" class="mod-input">
         <p class="mod-output"></p>
 
         <label for="resistance">Resistance</label>
-        <input type="number" class="mod-input">
+        <input id="resistance" type="number" class="mod-input">
         <p class="mod-output"></p>
     </div>
 
     <div id="hit-points">
         <h4>Hit Points</h4>
         <label for="Head">Head</label>
-        <input type="text">
+        <input id="head" type="text">
         <br>
 
         <label for="Body">Body</label>
-        <input type="text">
+        <input id="body" type="text">
         <br>
 
         <label for="Internals">Internals</label>
-        <input type="text">
+        <input id="internals" type="text">
         <br>
 
         <label for="Limbs">Limbs</label>
-        <input type="text">
+        <textarea id="limbs" type="text"cols="20" rows="5" ></textarea>
         <br>
 
         <label for="Tail">Tail</label>
-        <input type="text">
+        <input id="tail" type="text">
         <br>
 
     </div>
 
     <div class="RCO">
-        <h3>Races, Origins, and Class</h3>
+        <h3>Race, Class, and Origin</h3>
         <div class="race">
             <h4>Race</h4>
             <label for="race">Race</label>
-            <input type="text">
+            <input id="race" type="text">
             <br>
 
             <label for="Skills">Skills</label>
-            <input type="text">
+            <input id="raceSkills" type="text">
             <br>
 
             <label for="senses">Senses</label>
-            <input type="text">
+            <input id="senses" type="text">
             <br>
 
             <label for="languages">Languages</label>
-            <input type="text">
+            <input id="langs" type="text">
             <br>
 
             <label for="movement">Movement Types</label>
-            <input type="text">
+            <input id="move" type="text">
             <br>
+
+            <label for="miasmicBoon">Miasmic Boon</label>
+            <input id="miasmicBoon" type="text">
+            <br>
+
+            <label for="miasmicPenalty"> Miasmic Penalties</label>
+            <input id="miasmicPenalties" type="text">
+            <br>
+
+            <label for="composure">Composure</label>
+            <input id="composure" type="text">
+
 
         </div>
         <div class="class">
             <h4>Class</h4>
             <label for="class">Class</label>
-            <input type="text">
+            <input id="charClass" type="text">
             <br>
 
             <label for="subclass">Subclass</label>
-            <input type="text">
+            <input id="subclass" type="text">
             <br>
 
             <label for="abilities">Abilities</label>
-            <input type="text">
-            <br>
-
-            <label for="hit-dice">Hit dice</label>
-            <input type="text">
+            <input id="abilities" type="text">
             <br>
 
             <label for="equipped">Equipped</label>
-            <input type="text">
+            <input id="equipped" type="text">
             <br>
 
             <label for="gc-start">Starting GC</label>
-            <input type="number">
+            <input id="gcStart" type="number">
             <br>
-
         </div>
+        <div class="origin">
+            <h4>Origin</h4>
+            <label for="origin">Origin</label>
+            <input id="origin" type="text">
+            <br>
+            <label for="affinity">Affinity</label>
+            <input id="originAffinity" type="text">
+            <br>
+            <label for="skill">Skills</label>
+            <input id="originSkills" type="text">
+        </div>
+    </div>
+    <div id="btn">
+        <button type="submit" id="create">Create Character</button>
     </div>
     </form>
 </body>

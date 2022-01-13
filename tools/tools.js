@@ -88,7 +88,7 @@ function getLocalStorage(){
         localString = ""
     }
     return localString
-}
+} 
 function setLocalStorage(notes){
     localStorage.setItem("motm-notes", notes)
 }

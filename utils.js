@@ -1,4 +1,4 @@
-export function getLocalStorage() { // ALWAYS CALL BEFORE USING SETLOCALSTORAGE
+function getLocalStorage() { // ALWAYS CALL BEFORE USING SETLOCALSTORAGE
     let localString = localStorage.getItem("motm-chars")
     if(localString == null) {
         localString = "[]"
@@ -6,6 +6,7 @@ export function getLocalStorage() { // ALWAYS CALL BEFORE USING SETLOCALSTORAGE
     return JSON.parse(localString)
 }
 
-export function setLocalStorage(chars) {
+function setLocalStorage(chars) {
     localStorage.setItem("motm-chars", JSON.stringify(chars))
 }
+chars = getLocalStorage()

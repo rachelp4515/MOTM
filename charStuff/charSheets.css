@@ -9,38 +9,28 @@ body{
     background-position: center;
     font-size: x-large;
 }
-h1, h4{
+h1{
     font-family: 'Cinzel Decorative', cursive;
 }
-div{
+div:not(#charList, #exclude, .hidden){
     background-color: rgb(236, 248, 243);
     border: 2px darkgreen solid;
-    border-radius: 0 17px;
+    border-radius: 0 10px;
     padding: 2%;
     margin: 5%;
+    text-align: center;
+    width: fit-content;
+    min-width: 270px;
+}
+#charList{
+    display: flex;
+    flex-wrap: wrap;
+
     
 }
-#btn{
-    background-color: rgba(155, 128, 211, 0.555);
-    border: none;
-    text-align: center;
-    padding: 2em;
-}
-button{
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: large;
-    padding: 12px;
-    border: 1px black solid;
-    border-radius: 0 8px;
-    cursor: pointer;
-}
-
-
-
- nav{
+nav{
     background-color: rgba(33, 24, 65, 0.295);
     padding: 8px;        
-
 } 
 
 ul {
@@ -78,3 +68,16 @@ li:not(#motm):hover{
     color: rgb(13, 15, 13);
     text-shadow: 2px 2px 3px lightgreen;
 } 
+.hidden{
+    position: fixed;
+    height: 100vh;
+    width:40vw;
+    background-color: pink;
+    top: 0;
+    right: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.hide{
+    display: none;
+}
