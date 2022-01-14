@@ -95,7 +95,7 @@ function display(char) {
     body.innerHTML = `Body:${char.hp.Body}`
     internals.innerHTML = `Internals:${char.hp.Internals}`
     limbs.innerHTML = `Limbs:${char.hp.Limbs}`
-    tail.innerHTML = `Tail:${char.hp.Tail}`
+    tail.innerHTML = `Special:${char.hp.Tail}`
 
     boon.innerHTML = `Miasmic Boon:${char.me.boon}`
     penalty.innerHTML = `Miasmic Penalties:${char.me.penalties}`

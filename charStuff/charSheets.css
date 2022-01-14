@@ -15,7 +15,7 @@ h1{
 div:not(#charList, #exclude, .hidden){
     background-color: rgb(236, 248, 243);
     border: 2px darkgreen solid;
-    border-radius: 0 10px;
+    border-radius: 0 20px;
     padding: 2%;
     margin: 5%;
     text-align: center;
@@ -70,15 +70,28 @@ li:not(#motm):hover{
 } 
 .hidden{
     position: fixed;
-    height: 100vh;
-    width:40vw;
-    background-color: pink;
+    height: calc( 100vh - 50px );
+    width:30vw;
+    background-color: rgb(132, 138, 185);
     top: 0;
     right: 0;
     font-size:medium;
     overflow: scroll;
+    padding: 20px;
+    border: rgba(158, 245, 194, 0.356) 20px solid;
+    border-right: none;
+    transition: 1s;
+    
 }
 
 .hide{
-    display: none;
+    right: -100%;
+}
+button{
+    background-color: rgb(118, 119, 202);
+    border: 1px rgb(42, 61, 50) solid;
+    border-radius: 0 8px;
+    padding: 10px;
+    font-family: serif;
+    font-size:medium
 }

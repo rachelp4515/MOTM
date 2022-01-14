@@ -41,13 +41,25 @@ const miasmicPenalties = document.getElementById("miasmicPenalties")
 const inputs = document.querySelectorAll('.mod-input')
 const displays = document.querySelectorAll('.mod-output')
 
+const form = document.getElementById("char-sheet")
+
+const formInputs = [...form.querySelectorAll("input")]
+console.log(formInputs)
+
+// SET TO false BEFORE PUSHING
+const debuging = false
+
+formInputs.forEach(input => input.required = true)
+
 const submit = document.getElementById("create")
 
 chars = getLocalStorage()
 
+
 inputs.forEach((input, i) => input.addEventListener("input", () => roll(input, displays[i])))
 
 submit.addEventListener("click",(e) => create(e, chars))
+submit.addEventListener("submit",(e) => create(e, chars))
 
 // dice mods
 function roll(input, display){
@@ -62,6 +74,12 @@ function roll(input, display){
 
 function create(e, chars) {
     e.preventDefault()
+    if(!debuging) {
+        const validForm = formInputs.reduce((r, input) => input.value == ""? false : r, true)
+        if(!validForm) {
+            return
+        }
+    }
     const char = {
     
             name: charName.value,
@@ -112,7 +130,7 @@ function create(e, chars) {
     }
     chars.push(char)
     setLocalStorage(chars)
-    window.location.replace("/charStuff/charSheets.html")
+    window.location.replace("charSheets.html")
 }
 
 
